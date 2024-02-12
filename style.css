@@ -1,0 +1,61 @@
+@font-face {
+  font-family: Vazir;
+  src: url("./fonts/Vazir-Medium-FD.ttf");
+}
+
+:root {
+  --color-1: hsl(330, 100%, 75%);
+  --color-2: hsl(130, 100%, 75%);
+  --color-3: hsl(230, 100%, 75%);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  display: grid;
+  height: 100vh;
+  direction: rtl;
+}
+
+.text-container {
+  font-family: vazir;
+  place-self: center;
+  text-align: center;
+  display: none;
+}
+
+.btn {
+  font-family: vazir;
+  font-size: 2em;
+  background-color: var(--color-2);
+  place-self: center;
+
+  padding: 0.5em;
+  border-radius: 1em;
+
+  transition: font-size 300ms ease-in-out;
+  cursor: pointer;
+}
+
+.text {
+  color: #eee;
+  font-size: 2em;
+}
+
+.clr-01 {
+  color: var(--color-1);
+}
+
+.clr-02 {
+  color: var(--color-2);
+}
+.clr-03 {
+  color: var(--color-3);
+}
